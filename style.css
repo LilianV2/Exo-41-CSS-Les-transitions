@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    width: 100vw;
+    height: 100vw;
+}
+
+.div-1 {
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
+    transition: background-color, width, height;
+    transition-duration: 6s, 6s, 6s;
+    transition-delay: 500ms, 500ms, 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.div-1:hover {
+    background-color: lightgrey;
+    height: 30rem;
+    width: 30rem;
+}
+
+.div-2 {
+    background-color: #184786;
+    width: 20rem;
+    height: 20rem;
+    transition: background-color, font-size, height, width;
+    transition-duration: 3s, 3s, 3s, 3s;
+    transition-delay: 500ms, 500ms, 500ms, 500ms;
+    transition-timing-function: ease-in;
+    font-size: 1rem;
+}
+
+.div-2:hover {
+    background-color: #7ea0e1;
+    font-size: 2rem;
+    width: 40rem;
+    height: 40rem;
+}
+
+@media screen and (max-width: 350px) {
+    div, p {
+        font-size: 0.7rem;
+        height: 15rem;
+        width: 15rem;
+    }
+}
